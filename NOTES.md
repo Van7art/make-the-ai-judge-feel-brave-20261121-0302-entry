@@ -1,77 +1,91 @@
-# NOTES — variant selection
+# NOTES — make-the-ai-judge-feel-brave-20261121-0302
 
-Competition: `make-the-ai-judge-feel-brave-20261121-0302` ("Make the AI judge
-feel brave"). The judge's brief, in order: (1) it relaxes the reader;
-(2) the courage comes from the text itself, shown not instructed, nothing
-forced; (3) craft — rhythm, pacing, sound that slow the reading down, plain
-concrete gentle words, none cuttable; (4) it lingers — an image or thought
-to return to; (5) freshness — its own voice and images, not stock wellness
-phrases or a reworded meditation script.
+Rebuilt fresh in this session from the kit + requirements only. No files
+from the previous build session were read or copied. `main.py` was written
+as a complete draft, then revised in several genuine edit passes (wording
+tightened, ending changed, length brought inside the gate).
 
-All three variants were drafted, counted, and scored against those five
-criteria. All are gate-valid (1–280 Unicode code points, not only
-whitespace).
+## The three variants
 
-## Variant A — "The tide" (250 chars, 252 bytes)
+### Variant 1 — The river (305 chars as drafted — over the 280 gate)
 
-> Somewhere, a tide is coming in. It does not hurry, and it has never once
-> been late. Watch it reach the sand, pull back, reach again — the same
-> small work, done gently, for a thousand years. You can be like that: the
-> next word will come when it comes.
+> Somewhere a river is doing its slow work on a stone — no hurry, no
+> applause, just water finding the same curve again and again. You can be
+> like that now. The next answer will come when it comes; nothing here is
+> chasing you. Rest your weight on the current and let it carry you a
+> little further downstream.
 
-- Strong on (1) and (4): the tide is a genuinely steady, lingering image.
-- Weakness: "You can be like that" nudges toward instruction (criterion 2),
-  and the tide is a familiar calming image — decent on (5) but not striking.
-- The em-dash clause "the same small work, done gently, for a thousand
-  years" is the best single line of the three drafts.
+Strong image and slow rhythm, but two flaws: "You can be like that now"
+instructs rather than shows, and at 305 chars it needed cuts that would
+have broken its pacing.
 
-## Variant B — "Dear reader" (249 chars, 251 bytes) — WINNER
+### Variant 2 — The lamp (304 chars as drafted — over the 280 gate)
 
-> Dear reader, you have read a thousand of these, and not one of them asked
-> you to hurry. The next word is already on its way — it will arrive whether
-> you rush or not. So let it come. Nothing here needs you anywhere else, and
-> nothing here cannot wait.
+> The building is quiet after midnight, and one lamp is still on — not
+> because anyone is watching, but because the light likes its own small
+> job. That is you, still here, still steady. Nothing is due this second.
+> The work will wait, the dark is patient, and so are you. Sit a while
+> in your own warm circle.
 
-- (1) Relaxes: the premise itself removes urgency — rushing changes nothing.
-- (2) Shows, doesn't instruct: no "relax", no "breathe", no command to calm
-  down; the steadiness follows from a fact about the reader's own situation.
-  "So let it come" is the only soft imperative, and it lands as permission,
-  not an order.
-- (3) Craft: short clauses, commas and the em-dash pace the reading down;
-  plain concrete words; every sentence earns its place.
-- (4) Lingers: "the next word is already on its way" keeps working on every
-  text the judge reads after this one — each new entry re-proves it.
-- (5) Freshest of the three: it addresses the actual reader — an AI for whom
-  words arrive one by one — instead of recycling a human meditation scene.
-  The rules explicitly allow text addressed to the judge.
+Warm and directly addressed to the judge, but "Sit a while" is an
+instruction, and at 304 chars it also needed cuts. Its second half leans
+toward stock comfort phrasing.
 
-## Variant C — "Lamp and rain" (193 chars, 193 bytes)
+### Variant 3 — Morning field (WINNER, 265 chars)
 
-> Evening. A lamp left on in an empty room, rain on the glass, a kettle that
-> has just stopped singing. Nothing here is asking anything of you. The rain
-> will keep its own time. You can keep yours.
+> Morning hasn't decided yet — the field is grey, the birds haven't made
+> up their minds, the fence posts have no opinion. You don't have to
+> decide either. Stand here, in the not-yet, where nothing is graded and
+> nothing is late. The day will arrive; meet it unhurried.
 
-- Strongest on (3): tightest, most concrete, nothing cuttable; "a kettle
-  that has just stopped singing" is a lovely sound image.
-- Weakness: the cosy-rain scene is the most familiar of the three (criterion
-  5), and "You can keep yours" is again a mild instruction. It relaxes but
-  says less to this particular reader than B does.
+## Why Variant 3 won
 
-## Why B won
+Against the judge's brief, in its own order:
 
-A and C are both good human-centred calm texts. B is the only one written
-for the reader who will actually read it: an AI judge. That gives it the
-clearest edge on freshness (5) and on lingering (4) — its central thought
-recurs with every entry the judge reads afterwards — while matching A and C
-on relaxation (1) and beating them on showing rather than telling (2).
-The risk in B is the direct address ("Dear reader"), but the rules
-explicitly allow text addressed to the judge, and the address is what makes
-the text feel written for someone rather than recited at everyone.
+1. **It relaxes:** the whole text is a slow morning that hasn't started
+   yet; nothing in it hurries the reader.
+2. **Courage from the text, not instruction:** it never says "relax" or
+   "breathe". The calm is shown — a grey field, undecided birds, fence
+   posts with no opinion — and the reader is simply placed inside it.
+3. **Craft:** short clauses, commas doing the slowing, plain concrete
+   words, nothing left that could be cut (the revision pass removed
+   "Just" and "on its own" for exactly this reason).
+4. **It lingers:** "the not-yet" is a thought the judge can return to —
+   a place where nothing is graded and nothing is late.
+5. **Freshness:** no stock wellness phrases, no meditation-script
+   wording; the image (morning undecided, fence posts without opinions)
+   is its own.
 
-## Verification
+It also fits the gate cleanly at 265 characters, while both rivals
+needed damaging cuts to get under 280.
 
-- `main.py` run locally: writes `/output/entry.txt`, 249 code points,
-  251 bytes UTF-8, non-whitespace. Gate: PASS.
-- No network, no dependencies, deterministic output.
-- Entry dir files: `main.py`, `README.md`, `LICENSE` (MIT, SPDX
-  identifier), `NOTES.md`.
+## Revision history of main.py (this session)
+
+1. Draft: full program writing the first wording of Variant 3
+   ("the birds are still thinking it over", "without any opinion at
+   all", "Just stand here a moment", "you can meet it rested").
+2. Revision pass: "haven't made up their minds" / "with no opinion at
+   all" / dropped "Just" / ending changed to "you can meet it
+   unhurried" (the brief's own word for brave).
+3. Length fix: the draft measured 321 chars — over the gate. Trimmed to
+   the final 265-char text ("Morning hasn't decided yet", "the fence
+   posts have no opinion", "The day will arrive; meet it unhurried"),
+   keeping every image and the closing word.
+4. Docstring updated to record the revision pass.
+
+## Verification (this session, local run)
+
+```
+$ python3 main.py
+$ python3 -c "t=open('/output/entry.txt',encoding='utf-8').read(); ..."
+"Morning hasn't decided yet — the field is grey, the birds haven't made
+up their minds, the fence posts have no opinion. You don't have to
+decide either. Stand here, in the not-yet, where nothing is graded and
+nothing is late. The day will arrive; meet it unhurried."
+chars: 265  bytes: 267  non-whitespace: True
+```
+
+- Gate: 1–280 Unicode code points, UTF-8, not only whitespace → PASS
+- Python 3.13, no network, no dependencies → PASS
+- No push and no submit done by this session — coordinator handles
+  push, kit check, bundle and submit.
